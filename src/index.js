@@ -5,12 +5,29 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import spinnerSlice from "./Redux/spinnerSlice";
-
+import spinnerSlice from "./User/Redux/spinnerSlice";
+import userSlice from "./User/Redux/userSlice";
+import addCourses from "./User/Redux/courseSlice";
+import setUserRegis from "./User/Redux/registerSlice";
+import setDetail from "./User/Redux/detailSlice";
+import setMenu from "./User/Redux/menuSlice";
+import setMenuDetail from "./User/Redux/menuDetailSlice";
+import setBooking from "./User/Redux/bookingSlice";
+import deselectItem from "./User/Redux/selectedItemSlice";
+import selectItem from "./User/Redux/selectedItemSlice";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 export let store = configureStore({
   reducer: {
+    userSlice: userSlice,
     spinnerSlice,
+    addCourses,
+    setUserRegis,
+    setDetail,
+    setMenu,
+    setMenuDetail,
+    setBooking,
+    deselectItem,
+    selectItem,
   },
 });
 root.render(

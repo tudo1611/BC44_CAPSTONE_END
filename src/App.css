@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -24px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +17,45 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  color: #636363;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+.btn-gradient {
+  display: inline-block;
+  padding: 10px 35px;
+  font-size: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  background-size: 200%;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-gradient:hover {
+  background-position: right center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
