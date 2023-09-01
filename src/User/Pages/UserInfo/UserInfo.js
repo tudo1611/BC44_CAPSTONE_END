@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Tabs, Progress, Space, Card, message } from "antd";
 import { https } from "../../services/config";
 import { deselectItem } from "../../Redux/selectedItemSlice";
@@ -35,9 +35,9 @@ function UserInfo() {
 }
 function Course() {
   const { selectedCourse } = useSelector((state) => state.selectItem);
-  console.log("selectedCourse", selectedCourse);
+  const user = useSelector((state) => state.userSlice.userInfo);
+  const dispatch = useDispatch();
   return selectedCourse.map(({ maKhoaHoc, hinhAnh, tenKhoaHoc, moTa }) => {
-    const user = useSelector((state) => state.userSlice.userInfo);
     const { taiKhoan } = user;
     const detailBooking = {
       maKhoaHoc: 0,
