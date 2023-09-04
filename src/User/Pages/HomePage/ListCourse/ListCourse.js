@@ -46,11 +46,12 @@ export default function ListCourse() {
               title={tenKhoaHoc}
               className="text-center p-2 rounded  border-transparent"
               description={
-                moTa.length > 20 ? (
-                  <span>{moTa.slice(0, 20)}...</span>
-                ) : (
-                  <span>{moTa}</span>
-                )
+                moTa
+                // moTa.length > 20 ? (
+                //   <span>{moTa.slice(0, 20)}...</span>
+                // ) : (
+                //   <span>{moTa}</span>
+                // )
               }
             />
             <NavLink
