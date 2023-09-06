@@ -1,0 +1,52 @@
+@import "../../styles/responsive.scss";
+
+.widget {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+    .left,
+    .right {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      color: rgb(160, 160, 160);
+    }
+  
+    .counter {
+      font-size: 30px;
+      font-weight: 300;
+    }
+  
+    .link {
+      font-size: 14px;
+      border-bottom: 1px solid grey;
+    }
+  
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+  
+      &.positive {
+        color: green;
+      }
+  
+      &.negative {
+        color: red;
+      }
+    }
+  
+    .icon {
+      font-size: 30px;
+      padding: 5px;
+      background-color: lightcoral;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+}

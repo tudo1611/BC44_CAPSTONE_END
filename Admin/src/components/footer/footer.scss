@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $main-bg;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  justify-content: space-between;
+  border-top: 1px solid $soft-bg;
+
+  button {
+    &:hover {
+      background-color: $main-bg;
+      animation-name: chevronUp;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+  }
+
+  @keyframes chevronUp {
+    from {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    to {
+      opacity: 0.1;
+      transform: translateY(-50px);
+    }
+  }
+}

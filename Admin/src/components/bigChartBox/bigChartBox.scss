@@ -1,0 +1,19 @@
+@import "../../styles/responsive.scss";
+
+.big-chart-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3{
+      font-size: 21px;
+  }
+
+  .chart{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+}
